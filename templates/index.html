@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #chart {
+            margin-top: 20px;
+        }
+        #data-table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #data-table th, #data-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        #data-table th {
+            background-color: #f2f2f2;
+        }
+        #plot {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Price Prediction</h1>
+    <div id="chart"></div>
+    <img id="plot" src="" alt="Stock Price Plot">
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Actual Price</th>
+                <th>Predicted Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch data from Flask API
+        fetch('/predict')
+            .then(response => response.json())
+            .then(data => {
+                // Display the plot
+                document.getElementById('plot').src = `data:image/png;base64,${data.plot_url}`;
+
+                // Create D3.js line chart
+                const margin = { top: 20, right: 30, bottom: 50, left: 50 };
+                const width = 800 - margin.left - margin.right;
+                const height = 400 - margin.top - margin.bottom;
+
+                const svg = d3.select("#chart")
+                    .append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+                const x = d3.scaleBand()
+                    .domain(data.dates)
+                    .range([0, width])
+                    .padding(0.1);
+
+                const y = d3.scaleLinear()
+                    .domain([Math.min(...data.actual_prices, ...data.predicted_prices), 
+                             Math.max(...data.actual_prices, ...data.predicted_prices)])
+                    .range([height, 0]);
+
+                // Add X axis
+                svg.append("g")
+                    .attr("transform", `translate(0,${height})`)
+                    .call(d3.axisBottom(x))
+                    .selectAll("text")
+                    .style("text-anchor", "end")
+                    .attr("dx", "-.8em")
+                    .attr("dy", ".15em")
+                    .attr("transform", "rotate(-45)");
+
+                // Add Y axis
+                svg.append("g")
+                    .call(d3.axisLeft(y));
+
+                // Add actual prices line
+                svg.append("path")
+                    .datum(data.dates.map((date, i) => ({ date, price: data.actual_prices[i] })))
+                    .attr("fill", "none")
+                    .attr("stroke", "steelblue")
+                    .attr("stroke-width", 1.5)
+                    .attr("d", d3.line()
+                        .x(d => x(d.date))
+                        .y(d => y(d.price))
+                    );
+
+                // Add predicted prices line
+                svg.append("path")
+                    .datum(data.dates.map((date, i) => ({ date, price: data.predicted_prices[i] })))
+                    .attr("fill", "none")
+                    .attr("stroke", "orange")
+                    .attr("stroke-width", 1.5)
+                    .attr("d", d3.line()
+                        .x(d => x(d.date))
+                        .y(d => y(d.price))
+                    );
+
+                // Populate the data table
+                const tableBody = document.querySelector("#data-table tbody");
+                data.dates.forEach((date, i) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${date}</td>
+                        <td>${data.actual_prices[i].toFixed(2)}</td>
+                        <td>${data.predicted_prices[i].toFixed(2)}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>

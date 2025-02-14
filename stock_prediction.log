@@ -1,0 +1,192 @@
+2025-02-14 18:55:35,881 - INFO - Successfully downloaded data for ^NSEBANK
+2025-02-14 18:55:35,882 - ERROR - Error in daily update: [Errno 2] No such file or directory: 'EQUITY_L.csv'
+2025-02-14 19:05:40,571 - ERROR - Error in daily update: [Errno 2] No such file or directory: 'EQUITY_L.csv'
+2025-02-14 19:08:18,832 - ERROR - Error in daily update: [Errno 2] No such file or directory: 'EQUITY_L.csv'
+2025-02-14 19:11:33,640 - ERROR - Error in daily update: [Errno 2] No such file or directory: 'EQUITY_L.csv'
+2025-02-14 19:13:22,203 - INFO - Starting stock prediction pipeline...
+2025-02-14 19:13:22,204 - ERROR - Error in daily update: [Errno 2] No such file or directory: 'EQUITY_L.csv'
+2025-02-14 19:13:22,204 - INFO - Scheduler started. Waiting for the scheduled time...
+2025-02-14 19:13:53,147 - INFO - Scheduler stopped by user.
+2025-02-14 19:18:39,618 - ERROR - Error in daily update: [Errno 2] No such file or directory: 'EQUITY_L.csv'
+2025-02-14 19:19:56,956 - ERROR - Data file for 20MICRONS not found!
+2025-02-14 19:19:56,956 - ERROR - Data file for 21STCENMGM not found!
+2025-02-14 19:19:56,957 - ERROR - Data file for 360ONE not found!
+2025-02-14 19:19:56,957 - ERROR - Data file for 3IINFOLTD not found!
+2025-02-14 19:19:56,957 - ERROR - Data file for 3MINDIA not found!
+2025-02-14 19:19:56,958 - ERROR - Data file for 3PLAND not found!
+2025-02-14 19:20:05,371 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:20:05,423 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA_model.h5
+2025-02-14 19:20:05,536 - ERROR - Error in daily update: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-14 19:27:54,262 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA.pkl
+2025-02-14 19:27:54,317 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:27:54,317 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:27:54,321 - INFO -  * Restarting with stat
+2025-02-14 19:28:11,103 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA.pkl
+2025-02-14 19:28:11,108 - WARNING -  * Debugger is active!
+2025-02-14 19:28:11,112 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:30:46,834 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:30:48,020 - INFO -  * Restarting with stat
+2025-02-14 19:31:05,204 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA.pkl
+2025-02-14 19:31:05,213 - WARNING -  * Debugger is active!
+2025-02-14 19:31:05,216 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:31:07,509 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:31:08,235 - INFO -  * Restarting with stat
+2025-02-14 19:31:22,779 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA.pkl
+2025-02-14 19:32:04,259 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA.pkl
+2025-02-14 19:32:06,333 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:32:06,333 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:32:06,335 - INFO -  * Restarting with stat
+2025-02-14 19:32:21,138 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA.pkl
+2025-02-14 19:33:09,204 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:33:09,204 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:33:09,207 - INFO -  * Restarting with stat
+2025-02-14 19:33:43,137 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:33:43,137 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:33:43,138 - INFO -  * Restarting with stat
+2025-02-14 19:33:47,243 - WARNING -  * Debugger is active!
+2025-02-14 19:33:47,249 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:34:19,514 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\app.py', reloading
+2025-02-14 19:34:20,163 - INFO -  * Restarting with stat
+2025-02-14 19:34:25,056 - WARNING -  * Debugger is active!
+2025-02-14 19:34:25,059 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:34:34,794 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\app.py', reloading
+2025-02-14 19:34:35,505 - INFO -  * Restarting with stat
+2025-02-14 19:34:40,736 - WARNING -  * Debugger is active!
+2025-02-14 19:34:40,740 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:34:49,513 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\app.py', reloading
+2025-02-14 19:34:50,082 - INFO -  * Restarting with stat
+2025-02-14 19:34:55,479 - WARNING -  * Debugger is active!
+2025-02-14 19:34:55,483 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:34:57,739 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\app.py', reloading
+2025-02-14 19:34:58,406 - INFO -  * Restarting with stat
+2025-02-14 19:35:03,613 - WARNING -  * Debugger is active!
+2025-02-14 19:35:03,619 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:35:06,307 - ERROR - Prediction error: cannot access local variable 'scaler' where it is not associated with a value
+2025-02-14 19:35:06,308 - INFO - 127.0.0.1 - - [14/Feb/2025 19:35:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:36:32,620 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:36:40,392 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:36:40,392 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:36:40,394 - INFO -  * Restarting with stat
+2025-02-14 19:36:45,118 - WARNING -  * Debugger is active!
+2025-02-14 19:36:45,121 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:37:18,750 - ERROR - Prediction error: This MinMaxScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-02-14 19:37:18,751 - INFO - 127.0.0.1 - - [14/Feb/2025 19:37:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:37:22,941 - INFO - 127.0.0.1 - - [14/Feb/2025 19:37:22] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-02-14 19:37:24,260 - ERROR - Prediction error: This MinMaxScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-02-14 19:37:24,260 - INFO - 127.0.0.1 - - [14/Feb/2025 19:37:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:37:42,424 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:37:43,252 - INFO -  * Restarting with stat
+2025-02-14 19:37:49,058 - WARNING -  * Debugger is active!
+2025-02-14 19:37:49,062 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:38:02,614 - ERROR - Prediction error: This MinMaxScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-02-14 19:38:02,617 - INFO - 127.0.0.1 - - [14/Feb/2025 19:38:02] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:38:05,826 - ERROR - Prediction error: This MinMaxScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-02-14 19:38:05,827 - INFO - 127.0.0.1 - - [14/Feb/2025 19:38:05] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:38:11,612 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:38:12,197 - INFO -  * Restarting with stat
+2025-02-14 19:38:16,581 - WARNING -  * Debugger is active!
+2025-02-14 19:38:16,585 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:38:33,713 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:38:34,281 - INFO -  * Restarting with stat
+2025-02-14 19:38:38,923 - WARNING -  * Debugger is active!
+2025-02-14 19:38:38,926 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:38:47,627 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:38:48,194 - INFO -  * Restarting with stat
+2025-02-14 19:39:02,285 - INFO - Model trained and saved for 5PAISA at ./models\5PAISA.pkl
+2025-02-14 19:41:08,839 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-14 19:41:08,840 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:41:08,843 - INFO -  * Restarting with stat
+2025-02-14 19:41:13,397 - WARNING -  * Debugger is active!
+2025-02-14 19:41:13,401 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:41:28,515 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:44:44,307 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:44:44,350 - ERROR - Error training 20MICRONS: name 'pickle' is not defined
+2025-02-14 19:44:53,769 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:44:53,792 - ERROR - Error training 21STCENMGM: name 'pickle' is not defined
+2025-02-14 19:45:00,836 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:45:00,861 - ERROR - Error training 360ONE: name 'pickle' is not defined
+2025-02-14 19:45:23,442 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:45:23,462 - ERROR - Error training 3IINFOLTD: name 'pickle' is not defined
+2025-02-14 19:45:47,306 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:45:47,327 - ERROR - Error training 3MINDIA: name 'pickle' is not defined
+2025-02-14 19:46:06,188 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:46:06,208 - ERROR - Error training 3PLAND: name 'pickle' is not defined
+2025-02-14 19:46:22,333 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:46:22,333 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:46:22,335 - INFO -  * Restarting with stat
+2025-02-14 19:46:27,867 - WARNING -  * Debugger is active!
+2025-02-14 19:46:27,871 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:46:40,719 - ERROR - Error during prediction: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-14 19:46:40,720 - INFO - 127.0.0.1 - - [14/Feb/2025 19:46:40] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:46:48,434 - ERROR - Error during prediction: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-14 19:46:48,434 - INFO - 127.0.0.1 - - [14/Feb/2025 19:46:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:47:33,548 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:47:34,333 - INFO -  * Restarting with stat
+2025-02-14 19:47:39,024 - WARNING -  * Debugger is active!
+2025-02-14 19:47:39,027 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:47:46,158 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:47:46,158 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:47:46,160 - INFO -  * Restarting with stat
+2025-02-14 19:47:51,022 - WARNING -  * Debugger is active!
+2025-02-14 19:47:51,025 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:47:51,317 - ERROR - Error during prediction: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-14 19:47:51,318 - INFO - 127.0.0.1 - - [14/Feb/2025 19:47:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:49:00,801 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:49:01,607 - INFO -  * Restarting with stat
+2025-02-14 19:49:08,245 - WARNING -  * Debugger is active!
+2025-02-14 19:49:08,249 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:49:08,514 - ERROR - Error during prediction: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-02-14 19:49:08,514 - INFO - 127.0.0.1 - - [14/Feb/2025 19:49:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:49:59,201 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:49:59,852 - INFO -  * Restarting with stat
+2025-02-14 19:50:39,919 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:50:39,959 - ERROR - Error training 20MICRONS: name 'pickle' is not defined
+2025-02-14 19:50:48,873 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:50:48,895 - ERROR - Error training 21STCENMGM: name 'pickle' is not defined
+2025-02-14 19:50:55,323 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-02-14 19:50:55,346 - ERROR - Error training 360ONE: name 'pickle' is not defined
+2025-02-14 19:51:17,250 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:51:17,251 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:51:17,252 - INFO -  * Restarting with stat
+2025-02-14 19:51:22,338 - WARNING -  * Debugger is active!
+2025-02-14 19:51:22,342 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:51:22,577 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-14 19:51:22,588 - ERROR - Error during prediction: name 'pickle' is not defined
+2025-02-14 19:51:22,589 - INFO - 127.0.0.1 - - [14/Feb/2025 19:51:22] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-02-14 19:51:52,846 - INFO -  * Detected change in 'D:\\Machine Learning\\ML Projects\\FINAL-CVM\\st.py', reloading
+2025-02-14 19:53:41,975 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.110:5000
+2025-02-14 19:53:41,982 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 19:53:41,984 - INFO -  * Restarting with stat
+2025-02-14 19:53:47,681 - WARNING -  * Debugger is active!
+2025-02-14 19:53:47,684 - INFO -  * Debugger PIN: 124-824-942
+2025-02-14 19:53:48,016 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-14 19:53:48,023 - ERROR - Error during prediction: Ran out of input
+2025-02-14 19:53:48,024 - INFO - 127.0.0.1 - - [14/Feb/2025 19:53:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
