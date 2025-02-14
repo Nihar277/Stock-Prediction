@@ -2,6 +2,10 @@ import os
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+import tensorflow as tf
+
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from sklearn.preprocessing import MinMaxScaler
@@ -18,28 +22,23 @@ os.makedirs(MODEL_PATH, exist_ok=True)
 
 # Check if data is up to date
 def is_data_up_to_date(file):
-    df = pd.read_csv(os.path.join(DATA_PATH, file), skiprows=2)  # Skip first two rows
-    df.rename(columns={df.columns[0]: "Date"}, inplace=True)  # Rename first column as 'Date'
-    df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y', errors='coerce')  # Convert to datetime
-    df.dropna(subset=['Date'], inplace=True)  # Drop invalid dates
+    df = pd.read_csv(os.path.join(DATA_PATH, file))
+    df['Date'] = pd.to_datetime(df['Date'])
     latest_date = df['Date'].max().date()
     return latest_date == datetime.today().date()
 
 # Load stock data
 def load_data(file):
-    df = pd.read_csv(os.path.join(DATA_PATH, file), skiprows=2)  # Skip first two rows
-    df.rename(columns={df.columns[0]: "Date"}, inplace=True)  # Rename first column
-    df = df[['Date', df.columns[1]]].dropna()  # Select 'Date' and 'Close' price column
-    df.columns = ['Date', 'Close']  # Rename columns for clarity
-    df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y', errors='coerce')
-    df.dropna(subset=['Date'], inplace=True)
+    df = pd.read_csv(os.path.join(DATA_PATH, file))
+    df = df[['Date', 'Close']].dropna()
+    df['Date'] = pd.to_datetime(df['Date'])
     df.set_index('Date', inplace=True)
     return df
 
 # Data Preprocessing
 def preprocess_data(df):
     scaler = MinMaxScaler(feature_range=(0, 1))
-    df_scaled = scaler.fit_transform(df[['Close']])  # Scale 'Close' column
+    df_scaled = scaler.fit_transform(df)
     return df_scaled, scaler
 
 # Create sequences for LSTM
@@ -53,7 +52,7 @@ def create_sequences(data, seq_length=50):
 # Train Model for Each Stock
 def train_all_models():
     files = [f for f in os.listdir(DATA_PATH) if f.endswith('.csv')]
-
+    
     for file in files:
         stock = file.split('.')[0]
 
@@ -68,10 +67,6 @@ def train_all_models():
         data_scaled, scaler = preprocess_data(df)
         X, y = create_sequences(data_scaled)
 
-        if len(X) == 0 or len(y) == 0:
-            print(f"⚠️ Not enough data for {stock}. Skipping...")
-            continue
-
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=False)
 
         # Build LSTM Model
@@ -80,7 +75,7 @@ def train_all_models():
             LSTM(50),
             Dense(1)
         ])
-
+        
         model.compile(optimizer='adam', loss='mse')
         model.fit(X_train, y_train, epochs=20, batch_size=32, validation_data=(X_test, y_test), verbose=1)
 
